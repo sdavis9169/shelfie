@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Form.css'
 
 export default class Form extends Component {
     constructor(props){
@@ -8,6 +9,7 @@ export default class Form extends Component {
             name: '',
             price:''
         };
+        this.baseState = this.state;
 
         this.handleImage = this.handleImage.bind(this);
         this.handleNameChange = this.handleNameChange.bind(this);
@@ -28,14 +30,15 @@ export default class Form extends Component {
     }
 
     handleCancel(){
-
+        this.setState(this.baseState)
     }
+    
 
 
 
   render() {
     return (
-      <div>
+      <div className='form'>
         Form
         <div>
         <input 
