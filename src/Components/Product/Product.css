@@ -4,7 +4,7 @@
     border-radius: 10px;
     width: 600px;
     height: 250px;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .product-image{
@@ -20,5 +20,11 @@
 .button {
     background-color: #3AD886;
     height: 40px;
-    justify-content: space-between
+    width: 80px;
+    justify-content: space-between;
+    
+}
+
+.button:hover {
+    background-color: yellow;
 }

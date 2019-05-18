@@ -14,7 +14,7 @@ export default function Product(props) {
 					<p>${props.currentProduct.price} </p>
 				</div>
 
-				<div>
+				<div className="button-container">
 					<button
 						className='button'
 						onClick={() => {
@@ -24,7 +24,7 @@ export default function Product(props) {
 							});
 						}}
 					>
-						{' '}
+					
 						Delete
 					</button>
 					<Link to={"/edit-product-form/" + props.currentProduct.product_id}>
