@@ -1,1 +1,1 @@
-SELECT * FROM shelfie;
+SELECT * FROM products;

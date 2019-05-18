@@ -1,0 +1,24 @@
+.product{
+    display: flex;
+    background: #D34735;
+    border-radius: 10px;
+    width: 600px;
+    height: 250px;
+    margin-top: 20px
+}
+
+.product-image{
+    height: 200px;
+    width: 320px;
+    margin: 0 10px
+}
+
+.button-container{
+    display: flex
+}
+
+.button {
+    background-color: #3AD886;
+    height: 40px;
+    justify-content: space-between
+}

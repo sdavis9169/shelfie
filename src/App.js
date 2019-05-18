@@ -4,39 +4,25 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Form from './Components/Form/Form';
 import Header from './Components/Header/Header';
 
-const baseURL = 'http://localhost:4040'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
-export default class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      inventory: []
-    }
-  };
-
-  componentDidMount(){
-    const inventoryPromise = [];
-    inventoryPromise.push(axios.get(`${baseURL}`))
-
-    Promise.all(inventoryPromise)
-    .then((res) => {
-      this.setState({
-        inventory: res.map((e) =>  {
-          return e.data
-        })
-      })
-    })
-  }
-
-
-  render() {
-    return (
-      <div>
-        <Dashboard />
-        <Form />
-        <Header />
-      </div>
-    )
-  }
+class App extends Component {
+	render() {
+		return (
+			<Router>
+				<div className="App">
+					<Header />
+					<div>
+						<Switch>
+							<Route exact path="/" component={Dashboard} />
+							<Route path="/new-product-form" component={Form} />
+							<Route path="/edit-product-form/:id" component={Form} />
+						</Switch>
+					</div>
+				</div>
+			</Router>
+		);
+	}
 }
 
+export default App;

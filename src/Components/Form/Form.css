@@ -1,5 +1,11 @@
-.Form{
-    color: green;
-    background-color: red;
-    height: 100px
+.Form {
+    background-color: #3AD886;
+    height: 600px;
+    width: 400px;
+    margin-left: 700px;
+    margin-top: 20px
+}
+
+.productImage{
+    padding-top: 20px;
 }
