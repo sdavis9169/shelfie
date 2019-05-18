@@ -1,11 +1,32 @@
-.Form {
+.form {
     background-color: #3AD886;
     height: 600px;
     width: 400px;
-    margin-left: 700px;
-    margin-top: 20px
+    margin-left: 35%;
+    margin-top: 20px;
 }
 
 .productImage{
     padding-top: 20px;
+}
+
+.cancel {
+    height: 40px;
+    width: 86px;
+    background-color: #ed6b5a;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: solid 2px #ed6b5a;
+}
+
+.add {
+    height: 40px;
+    width: 86px;
+    background-color: #ed6b5a;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: solid 2px #ed6b5a;
+
 }

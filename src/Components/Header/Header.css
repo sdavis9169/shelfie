@@ -6,13 +6,42 @@
 }
 
 h1 {
-    color: white;
-    margin-left: 40px;
+        margin-top: 30px;
+        color: white;
+        margin-left: 25px;
 }
 
 #logo {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 87px;
+}
+
+.dashboard {
+    height: 40px;
+    width: 86px;
+    background-color: #ed6b5a;
+    margin-top: 25px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border: solid 2px #ed6b5a;
+}
+
+.dashboard:hover{
+    background-color: #e84a4a;
+}
+
+.add:hover{
+    background-color: #e84a4a;
+}
+
+.add {
+    height: 40px;
+    width: 86px;
+    background-color: #ed6b5a;
+    margin-top: 5px;
+    margin-left: 60px;
+    border-radius: 10px;
+    border: solid 2px #ed6b5a;
 }

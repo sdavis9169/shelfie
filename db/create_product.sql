@@ -4,7 +4,7 @@ price,
 image_url
 )
 
-VALUES(
+VALUES (
     $1,
     $2,
     $3
